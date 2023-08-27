@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Web Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <header role="heading" aria-level="1">
+    <h1>Accessible Web Page</h1>
+  </header>
+  
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#">Home</a></li>
+      <li role="listitem"><a href="#">About</a></li>
+      <li role="listitem"><a href="#">Services</a></li>
+      <li role="listitem"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section>
+      <img src="image.jpg" alt="A beautiful image" role="img">
+      <p>This is a brief description of the image.</p>
+    </section>
+    
+    <section>
+      <h2>Features</h2>
+      <ul role="list">
+        <li role="listitem">Responsive design</li>
+        <li role="listitem">Accessibility</li>
+        <li role="listitem">User-friendly</li>
+      </ul>
+    </section>
+  </main>
 </body>
-
 </html>
